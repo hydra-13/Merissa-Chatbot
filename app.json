@@ -2,7 +2,7 @@
     "name": "Merissa-ChatBot",
     "description": "Hello, I am Merissa An Intelligent ChatBot. If You Are Feeling Lonely, You can Always Come to me and Chat With Me!",
     "logo": "https://telegra.ph/file/06b15a2e9bfebd63220e0.jpg",
-    "repository": "https://github.com/Prince-Botz/MerissaChatbot",
+    "repository": "https://github.com/hydra-13/Merissa-Chatbot",
     "env": {
         "BOT_TOKEN": {
             "description": "taken from @botfather",
