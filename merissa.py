@@ -19,7 +19,7 @@ print("Merissa Chatbot Started!")
 
 tr = Translator()
 
-@bot.on_message(filters.command("start") & ~filters.edited)
+@bot.on_message(filters.command("cstart") & ~filters.edited)
 async def start(client, message):
    if message.chat.type == 'private':
        await message.reply("**Hey There, I'm MerissaRobot. An advanced chatbot with AI. \n\nAdd me to your group and chat with me!**",   
