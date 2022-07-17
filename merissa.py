@@ -19,6 +19,21 @@ print("Merissa Chatbot Started!")
 
 tr = Translator()
 
+@bot.on_message(filters.command("start") & ~filters.edited)
+async def start(client, message):
+   if message.chat.type == 'private':
+       await message.reply("**Hey There, I'm MerissaRobot. An advanced chatbot with AI. \n\nAdd me to your group and chat with me!**",   
+                            reply_markup=InlineKeyboardMarkup(
+                                [[
+                                        InlineKeyboardButton(
+                                            "Dev", url=f"https://t.me/{OWNER_USERNAME}"),
+                                        InlineKeyboardButton(
+                                            "Repo", url="https://github.com/Prince-Botz/Merissa-Chatbot")
+                                    ]]
+                            ),               
+           )
+   else:
+       await message.reply("**I'm alive, check my pm to know more about me!**")
 
 @bot.on_message(
     filters.text
